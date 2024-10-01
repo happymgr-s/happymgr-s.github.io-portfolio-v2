@@ -1,5 +1,5 @@
 const SamplePage = () => {
-  console.log("sample");
+  console.log("develop");
   return <></>;
 };
 
