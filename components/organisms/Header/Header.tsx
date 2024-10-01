@@ -4,16 +4,14 @@ import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
 
-type HeaderProps = {
-  children: React.ReactNode;
-};
+type HeaderProps = {};
 
 /**
  * ヘッダーコンポーネント
  * @param props
  */
 const Header: React.FC<HeaderProps> = (props) => {
-  const { children } = props;
+  const {} = props;
 
   return (
     <>
@@ -40,7 +38,6 @@ const Header: React.FC<HeaderProps> = (props) => {
           </Link>
         </div>
       </header>
-      {children}
     </>
   );
 };
