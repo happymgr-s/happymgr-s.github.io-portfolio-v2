@@ -11,6 +11,7 @@ const meta = {
   argTypes: {},
   args: {
     children: 'Button',
+    variant: 'default',
   },
 } satisfies Meta<typeof Button>;
 
@@ -19,4 +20,28 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {},
+};
+
+export const Secondary: Story = {
+  args: {
+    variant: 'secondary',
+  },
+};
+
+export const Destructive: Story = {
+  args: {
+    variant: 'destructive',
+  },
+};
+
+export const Link: Story = {
+  args: {
+    variant: 'link',
+  },
+};
+
+export const Ghost: Story = {
+  args: {
+    variant: 'ghost',
+  },
 };
