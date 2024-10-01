@@ -66,4 +66,26 @@ module.exports = function (plop) {
       },
     ],
   });
+
+  /**
+   * ストーリーのテンプレートジェネレータ
+   * ・ストーリーファイル
+   */
+  plop.setGenerator('stories_shadcn', {
+    description: 'Generate a new story for shadcn',
+    prompts: [
+      {
+        type: 'input',
+        name: 'name',
+        message: 'Component name please(for camelCase)',
+      },
+    ],
+    actions: [
+      {
+        type: 'add',
+        path: 'components/ui/{{name}}.stories.tsx',
+        templateFile: 'plop-templates/story.shadcn.tsx.hbs',
+      },
+    ],
+  });
 };
